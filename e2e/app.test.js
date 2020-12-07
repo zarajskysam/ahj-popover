@@ -8,9 +8,9 @@ describe('popover', () => {
   const baseUrl = 'http://localhost:9000';
   beforeAll(async () => {
     browser = await puppetteer.launch({
-    //   headless: false, 
-    //   slowMo: 100,
-    //   devtools: true, 
+    // headless: false, // show gui
+    // slowMo: 100,
+    // devtools: true, // show devTools
     });
     page = await browser.newPage();
   });
